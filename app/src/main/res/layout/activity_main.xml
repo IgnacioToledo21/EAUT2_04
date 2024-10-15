@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"> <!-- Alineación centrada horizontalmente -->
+
+    <!-- Campo para ingresar millas -->
+    <EditText
+        android:id="@+id/milesInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Millas"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp" /> <!-- Añadido margen inferior para separación visual -->
+
+    <!-- Campo para ingresar pies -->
+    <EditText
+        android:id="@+id/feetInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pies"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp" /> <!-- Añadido margen inferior para separación visual -->
+
+    <!-- Campo para ingresar pulgadas -->
+    <EditText
+        android:id="@+id/inchesInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pulgadas"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" /> <!-- Añadido margen inferior más grande para mayor separación -->
+
+    <!-- Botón para realizar la conversión -->
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir a Metros"
+        android:layout_marginBottom="16dp" /> <!-- Añadido margen inferior para separación del botón y resultado -->
+
+    <!-- Texto para mostrar el resultado -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Resultado en Metros:"
+        android:textSize="18sp"
+        android:textAlignment="center" /> <!-- El texto está centrado -->
+</LinearLayout>
